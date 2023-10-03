@@ -1,15 +1,27 @@
-// npm i | npm start
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/navbar/navbar';
+import HomePage from './components/homePage/homePage';
+import Footer from './components/footer/footer';
 
-// Components
-import Landing from './components/Landing';
 
 function App() {
   return (
-    <div className="App">
-      <Landing />
+    <div className='app'>
+        <Navbar/>
+      <div className='allComponents'>
+    
+        <Routes>
+        <Route path='/' element={<HomePage/>}/>
+      </Routes>  
+
+     <Footer/>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+
+

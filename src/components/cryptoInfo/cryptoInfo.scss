@@ -1,0 +1,13 @@
+.cryptoinfomaindiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cryptoinfomaindiv * {
+    display: flex;
+    width: 641px;
+    height: 445px;
+    border-radius: 30px;
+    background: #342F5C;
+}
+
