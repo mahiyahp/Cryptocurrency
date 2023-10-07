@@ -34,18 +34,26 @@ const Landing = () => {
     return (
         <>
         <div className={styles.cryptoSearch}>
-            <h2>Today's Cryptocurrency</h2>
+            <h2>Today's Cryptocurrency - Exchange Rates</h2>
             <input className={styles.input} type="text" placeholder="Search..." value={search} onChange={searchHandler} />
         </div>
 
+
+
+
+
             {
+                
                 coins.length ?
                     <div className={styles.coinContainer}>
+                    <table><tr>
+                        <th>Logo</th><th>Name</th><th>Symbol</th><th>Price</th><th>Market Cap</th><th>Price Change</th>
+                    </tr></table>
                         {
-                            searchedCoins.map(coin => <Coin
+                            searchedCoins.map(coin =><Coin
                                 key={coin.id}
+                                image={coin.image} 
                                 name={coin.name}
-                                image={coin.image}
                                 symbol={coin.symbol}
                                 price={coin.current_price}
                                 marketCap={coin.market_cap}

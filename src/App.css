@@ -17,3 +17,51 @@
   color: #ffffff;
 } */
 
+
+table {
+  width: 100%;
+  cursor: context-menu;
+  justify-content: space-between;
+  margin-bottom: 1.5%;
+}
+
+th,
+td {
+  text-align: center;
+  width: 16.6%;
+}
+
+th {
+  padding: 2.6%;
+  background-color: #3a507b6f;
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+  width: 16.6%;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  width: 16.6%;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+  width: 16.6%;
+}
+
+td:nth-child(4),
+th:nth-child(4) {
+  width: 16.6%;
+}
+
+td:nth-child(5),
+th:nth-child(5) {
+  width: 16.6%;
+}
+
+td:nth-child(6),
+th:nth-child(6) {
+  width: 16.6%;
+}
